@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:title="ADMINISTRATOR">
+            <menu>
+                <item
+                    android:id="@+id/nav_home"
+                    android:icon="@drawable/dashboard_icon"
+                    android:title="Dashboard" />
+                <item
+                    android:id="@+id/stateslink"
+                    android:icon="@drawable/institution_icon"
+                    android:title="Register States/Institutions" />
+                <item
+                    android:id="@+id/policedesklink"
+                    android:icon="@drawable/police_icon"
+                    android:title="Police Desk" />
+                <item
+                    android:id="@+id/reportslink"
+                    android:icon="@drawable/report_icon"
+                    android:title="Reports" />
+
+                <item
+                    android:id="@+id/reguserslink"
+                    android:icon="@drawable/users_icon"
+                    android:title="Register Users" />
+                <item
+                    android:id="@+id/newchildoffenderslink"
+                    android:icon="@drawable/new_icon"
+                    android:title="New Chid Offenders"/>
+                <item
+                    android:id="@+id/newdrugaddictslink"
+                    android:icon="@drawable/users_icon"
+                    android:title="New Drug Addicts"/>
+                <item
+                    android:id="@+id/newhandicappedlink"
+                    android:icon="@drawable/handicapped_icon"
+                    android:title="New Handicapped"/>
+                <item
+                    android:id="@+id/newchilmarriagelink"
+                    android:icon="@drawable/users_icon"
+                    android:title="New Child Marriage"/>
+                <item
+                    android:id="@+id/newschooldropoutlink"
+                    android:icon="@drawable/school_icon"
+                    android:title="New School Dropout"/>
+                <item
+                    android:id="@+id/newtraumacaselink"
+                    android:icon="@drawable/users_icon"
+                    android:title="New Trauma Case"/>
+
+
+            </menu>
+        </item>
+
+    </group>
+
+
+
+    <group android:checkableBehavior="single">
+        <item android:title="MANAGE">
+            <menu>
+                <item
+                    android:id="@+id/childrencaseslink"
+                    android:icon="@drawable/children_icon"
+                    android:title="Children Cases" />
+                <item
+                    android:id="@+id/institutionslink"
+                    android:icon="@drawable/institution_icon"
+                    android:title="Institutions" />
+                <item
+                    android:id="@+id/muserslink"
+                    android:icon="@drawable/users_icon"
+                    android:title="Users" />
+                <item
+                    android:id="@+id/filedcaseslink"
+                    android:icon="@drawable/filedcases_icon"
+                    android:title="Filed Cases" />
+
+                <item
+                    android:id="@+id/logoutlink"
+                    android:icon="@drawable/logout_icon"
+                    android:title="Logout" />
+
+
+            </menu>
+        </item>
+
+    </group>
+</menu>
+
+

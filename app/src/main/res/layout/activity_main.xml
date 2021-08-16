@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:screenOrientation="portrait"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="140dp"
+
+            android:src="@drawable/logok"
+            android:textSize="90dp"
+            android:textColor="#040909"
+            android:fontFamily="sans-serif-black"
+            />
+
+        <TextView
+            android:id="@+id/CPIMS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo"
+            android:layout_centerHorizontal="true"
+            android:text="@string/cpims"
+            android:textStyle="bold"
+            android:textColor="#EA1702"
+            android:textSize="25sp" />
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CPIMS"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1dp"
+            android:fontFamily="@font/aladin"
+            android:text="@string/protecting_children_rights"
+            android:textColor="#0C2B9A"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+
+        <ProgressBar
+            android:id="@+id/progresslogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:layout_below="@+id/textView1"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="8dp"
+            android:visibility="invisible"
+        />
+
+        <!--        <TextView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="Children's Act, 2001"-->
+        <!--            android:textSize="25sp"-->
+        <!--            android:layout_below="@+id/CPIMS"-->
+        <!--            android:textColor="#031BF4"-->
+        <!--            android:layout_centerHorizontal="true"/>-->
+        <RelativeLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/CPIMS"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="20dp"
+            >
+
+
+            <EditText
+                android:id="@+id/txtmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/username"
+                android:layout_centerHorizontal="true"
+                android:textColorHint="#050908"
+                android:textColor="#080809"
+                android:layout_marginLeft="22dp"
+                android:inputType="textEmailAddress"
+                android:textStyle="bold"
+                android:background="@drawable/coolwhitegreenrounded"
+                android:padding="16dp"
+                android:drawableRight="@drawable/user"
+                android:layout_marginRight="35dp"
+                android:layout_marginEnd="35dp"
+                android:drawableEnd="@drawable/user"
+                android:layout_marginStart="22dp" />
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_marginLeft="40dp"-->
+<!--                android:layout_marginRight="40dp"-->
+<!--                android:layout_height="1dp"-->
+<!--                android:layout_below="@+id/txtmail"-->
+<!--                android:background="#BC0946" />-->
+            <EditText
+                android:id="@+id/txtpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:layout_below="@+id/txtmail"
+                android:layout_marginTop="18dp"
+                android:textColorHint="#080909"
+                android:layout_marginLeft="22dp"
+                android:inputType="textPassword"
+                android:textColor="#080909"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:drawableEnd="@drawable/pasword"
+                android:background="@drawable/coolwhitegreenrounded"
+                android:padding="16dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginStart="22dp"
+                android:drawableRight="@drawable/pasword" />
+
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_marginLeft="40dp"-->
+<!--                android:layout_marginRight="40dp"-->
+<!--                android:layout_height="1dp"-->
+<!--                android:layout_below="@+id/txtpassword"-->
+<!--                android:background="#BC0946" />-->
+
+
+            <CheckBox
+                android:id="@+id/checkboxshow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtpassword"
+                android:layout_marginLeft="22dp"
+                android:paddingTop="56dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="35dp" />
+
+            <!--        <View-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_marginLeft="40dp"-->
+            <!--            android:layout_marginRight="40dp"-->
+            <!--            android:layout_height="1dp"-->
+            <!--            android:layout_marginBottom="10dp"-->
+            <!--            android:background="#BC0946"/>-->
+
+            <!--     <info.hoang8f.widget.FButton-->
+            <!--         android:id="@+id/btnsignin"-->
+            <!--         android:layout_width="match_parent"-->
+            <!--         android:layout_height="match_parent"-->
+            <!--         android:background="@drawable/bluebutton"-->
+            <!--         app:shadowEnabled="true"-->
+            <!--         app:shadowHeight="5dp"-->
+            <!--         app:cornerRadius="5dp"-->
+            <!--         android:text="LOGIN"-->
+            <!--         android:textColor="#fff"-->
+            <!--         />-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtpassword"
+                android:layout_marginStart="-52dp"
+                android:layout_marginLeft="-52dp"
+                android:textStyle="bold"
+                android:paddingTop="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/checkboxshow"
+                android:layout_toRightOf="@+id/checkboxshow"
+                android:id="@+id/txt"
+                android:text="@string/show_password" />
+
+
+
+
+
+<!--            <Button-->
+<!--                android:id="@+id/btnsignin"-->
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/sign_in"-->
+<!--                android:layout_below="@+id/txt"-->
+<!--                android:textColor="#E20909"-->
+<!--                android:textStyle="bold"-->
+<!--                android:shadowColor="#ff54"-->
+<!--                style="@style/Theme.Design"-->
+<!--                android:background="@drawable/whitebutton"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_marginBottom="28dp"-->
+<!--                android:layout_marginTop="34dp"-->
+
+<!--                />-->
+
+            <!--Button whose background color depends on the
+        selector and state of the button-->
+            <Button
+                android:layout_below="@+id/txt"
+                android:id="@+id/btnsignin"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/button_background_color"
+                android:text="sign in"
+                android:layout_centerHorizontal="true"
+                android:textColor="#061AEE"
+                android:layout_marginBottom="29dp"
+                android:layout_marginTop="34dp"
+                android:textStyle="bold"/>
+
+            <!--Switch with default state as enabled-->
+<!--            <Switch-->
+<!--                android:id="@+id/buttonSwitch"-->
+<!--                android:layout_width="160dp"-->
+<!--                android:layout_height="80dp"-->
+<!--                android:checked="true"-->
+<!--                android:text="Enabled"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="24sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:gravity="center_horizontal" />-->
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</FrameLayout>
+

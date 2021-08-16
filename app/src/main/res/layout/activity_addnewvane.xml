@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:screenOrientation="portrait"
+    android:layout_height="match_parent"
+    tools:context=".addnewvane">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="37dp"
+                android:layout_marginLeft="30dp">
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/logod"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:background="@drawable/logok"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:id="@+id/act"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New VANE Case"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#E7092E"
+                android:gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:padding="1dp"
+                android:layout_marginBottom="28dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_below="@+id/logod"
+                app:layout_constraintStart_toEndOf="@+id/title"
+                app:layout_constraintTop_toBottomOf="@+id/title"
+                tools:ignore="UnknownIdInLayout" />
+
+            <LinearLayout
+                android:id="@+id/linear2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/act"
+                android:paddingTop="2dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Childname:"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10sp"
+                    android:textSize="15sp"
+                    android:textColor="#030507"
+                    android:textStyle="bold"/>
+                <EditText
+
+                    android:id="@+id/childname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Fullname"
+                    android:textColorHint="#010509"
+                    android:textColor="#030507"
+                    android:layout_marginLeft="22dp"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/coolwhitegreenrounded"
+                    android:padding="16dp"
+                    android:layout_marginRight="35dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date of Birth:"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10sp"
+                    android:textSize="15sp"
+                    android:textColor="#030507"
+                    android:textStyle="bold"/>
+
+                <EditText
+
+                    android:id="@+id/dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Date of Birth"
+                    android:textColorHint="#010509"
+                    android:textColor="#080B0E"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="22dp"
+                    android:inputType="date"
+                    android:background="@drawable/coolwhitegreenrounded"
+                    android:padding="16dp"
+                    android:layout_marginRight="35dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Residence:"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10sp"
+                    android:textSize="15sp"
+                    android:textColor="#030507"
+                    android:textStyle="bold"/>
+
+                <EditText
+
+                    android:id="@+id/residence"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="35dp"
+                    android:background="@drawable/coolwhitegreenrounded"
+                    android:hint="Place of Residence"
+                    android:inputType="text"
+                    android:padding="16dp"
+                    android:textColor="#020A10"
+                    android:textColorHint="#010407" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Birth RegNo:"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10sp"
+                    android:textSize="15sp"
+                    android:textColor="#030507"
+                    android:textStyle="bold"/>
+
+                <EditText
+
+                    android:id="@+id/birthreg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Birth certificate no."
+                    android:textColorHint="#010407"
+                    android:textColor="#010509"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="25dp"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/coolwhitegreenrounded"
+                    android:padding="16dp"
+                    android:layout_marginRight="35dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sex:"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10sp"
+                    android:textSize="15sp"
+                    android:textColor="#030507"
+                    android:textStyle="bold"/>
+                <Spinner
+                    android:textSize="20dp"
+                    android:id="@+id/sex"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#000509"
+                    android:textColor="#000509"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="22dp"
+                    android:inputType="text"
+                    android:background="@drawable/coolwhitegreenrounded"
+                    android:padding="16dp"
+                    android:layout_marginRight="35dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Country of Origin:"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10sp"
+                    android:textSize="15sp"
+                    android:textColor="#030507"
+                    android:textStyle="bold"/>
+                <EditText
+
+                    android:id="@+id/country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Country of Origin"
+                    android:textColorHint="#010407"
+                    android:textColor="#010509"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="2dp"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/coolwhitegreenrounded"
+                    android:padding="16dp"
+                    android:layout_marginRight="35dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tribe:"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10sp"
+                    android:textSize="15sp"
+                    android:textColor="#030507"
+                    android:textStyle="bold"/>
+                <Spinner
+                    android:textSize="20dp"
+                    android:id="@+id/tribe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#000509"
+                    android:textColor="#000509"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="22dp"
+                    android:inputType="text"
+                    android:background="@drawable/coolwhitegreenrounded"
+                    android:padding="16dp"
+                    android:layout_marginRight="35dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Religion:"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10sp"
+                    android:textSize="15sp"
+                    android:textColor="#030507"
+                    android:textStyle="bold"/>
+                <Spinner
+                    android:textSize="20dp"
+                    android:id="@+id/religion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#000509"
+                    android:textColor="#000509"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="22dp"
+                    android:inputType="text"
+                    android:background="@drawable/coolwhitegreenrounded"
+                    android:padding="16dp"
+                    android:layout_marginRight="35dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sub-County:"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10sp"
+                    android:textSize="15sp"
+                    android:textColor="#030507"
+                    android:textStyle="bold"/>
+                <Spinner
+                    android:textSize="20dp"
+                    android:id="@+id/subcounty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#000509"
+                    android:textColor="#000509"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="22dp"
+                    android:inputType="text"
+                    android:background="@drawable/coolwhitegreenrounded"
+                    android:padding="16dp"
+                    android:layout_marginRight="35dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ward:"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10sp"
+                    android:textSize="15sp"
+                    android:textColor="#030507"
+                    android:textStyle="bold"/>
+                <Spinner
+                    android:textSize="20dp"
+                    android:id="@+id/ward"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#000509"
+                    android:textColor="#000509"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="22dp"
+                    android:inputType="text"
+                    android:background="@drawable/coolwhitegreenrounded"
+                    android:padding="16dp"
+                    android:layout_marginRight="35dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Caregiver:"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10sp"
+                    android:textSize="15sp"
+                    android:textColor="#030507"
+                    android:textStyle="bold"/>
+                <EditText
+
+                    android:id="@+id/caregivername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Caregiver Name"
+                    android:textColorHint="#010407"
+                    android:textColor="#010509"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="2dp"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/coolwhitegreenrounded"
+                    android:padding="16dp"
+                    android:layout_marginRight="35dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Caregiver Contact:"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10sp"
+                    android:textSize="15sp"
+                    android:textColor="#030507"
+                    android:textStyle="bold"/>
+                <EditText
+
+                    android:id="@+id/caregiverphone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Caregiver Tel No"
+                    android:textColorHint="#010407"
+                    android:textColor="#010509"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="2dp"
+                    android:inputType="number"
+                    android:background="@drawable/coolwhitegreenrounded"
+                    android:padding="16dp"
+                    android:layout_marginRight="35dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Caregiver ID:"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10sp"
+                    android:textSize="15sp"
+                    android:textColor="#030507"
+                    android:textStyle="bold"/>
+                <EditText
+
+                    android:id="@+id/caregiverid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Caregiver ID"
+                    android:textColorHint="#010407"
+                    android:textColor="#010509"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="2dp"
+                    android:inputType="number"
+                    android:background="@drawable/coolwhitegreenrounded"
+                    android:padding="16dp"
+                    android:layout_marginRight="35dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Relationship with the Child:"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10sp"
+                    android:textSize="15sp"
+                    android:textColor="#030507"
+                    android:textStyle="bold"/>
+                <Spinner
+                    android:textSize="20dp"
+                    android:id="@+id/relationship"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#000509"
+                    android:textColor="#000509"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="22dp"
+                    android:inputType="text"
+                    android:background="@drawable/coolwhitegreenrounded"
+                    android:padding="16dp"
+                    android:layout_marginRight="35dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Case Statement:"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10sp"
+                    android:textSize="15sp"
+                    android:textColor="#030507"
+                    android:textStyle="bold"/>
+                <EditText
+
+                    android:id="@+id/cstatement"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:hint="Case Statement"
+                    android:textColorHint="#010407"
+                    android:textColor="#010509"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="2dp"
+                    android:inputType="textAutoCorrect"
+                    android:background="@drawable/coolwhitegreenrounded"
+                    android:padding="16dp"
+                    android:layout_marginRight="35dp"/>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/regvanecase"
+                android:layout_below="@+id/linear2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonbg"
+                android:text="REGISTER CASE"
+                android:textColor="#fff"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:padding="16dp"
+                android:layout_marginBottom="28dp"
+                android:layout_marginTop="32dp"
+                />
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

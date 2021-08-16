@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="typeofoffence">
+        <item>Choose the type of offence</item>
+        <item>Theft</item>
+        <item>Murder</item>
+        <item>Physical abuse</item>
+    </string-array>
+</resources>

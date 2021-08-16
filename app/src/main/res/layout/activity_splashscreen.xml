@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="portrait"
+    android:id="@+id/content"
+    tools:context=".splashscreen">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logok" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CPIMS"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/imageView"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="#C50723"
+        android:layout_marginTop="8dp"
+         />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/aladin"
+        android:text="Protecting children rights"
+        android:textColor="#0C2B9A"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+<ProgressBar
+    android:id="@+id/progress"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:indeterminate="true"
+    android:layout_below="@+id/textView1"
+    android:background="@drawable/whitebutton"
+    android:layout_centerInParent="true"
+    android:layout_marginTop="8dp"
+     />
+
+
+
+    <LinearLayout
+        android:id="@+id/splashline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/progress"
+        >
+
+
+        <ImageView
+            android:id="@+id/copyright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progress"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="35dp"
+            android:src="@drawable/copyright"
+            android:layout_marginBottom="29dp"
+            android:layout_alignParentBottom="true"/>
+
+
+
+
+        <TextView
+            android:id="@+id/textv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/button_background_color"
+            android:text="2021 Department of Children Services (DCS). All Rights Reserved."
+            android:layout_centerHorizontal="true"
+            android:textColor="#050507"
+            android:layout_marginBottom="28dp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/copyright"
+            android:layout_below="@+id/progress"
+            android:layout_marginStart="-28dp"
+            android:layout_marginLeft="-28dp"
+            android:textSize="11dp"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>
+
+
+

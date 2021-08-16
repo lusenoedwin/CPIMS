@@ -1,0 +1,213 @@
+<resources>
+    <string name="app_name">CPIMS</string>
+    <string name="title_activity_admin_nav">AdminNavActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">County Government of Bomet</string>
+    <string name="nav_header_subtitle">Protecting Children</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="case_status">Case Status:</string>
+    <string name="reports_analytics"><![CDATA[Reports & Analytics]]></string>
+
+
+    <string-array name="type_user">
+        <item>Please Select</item>
+        <item>Government Employee</item>
+        <item>NGO/Private Sector Employee</item>
+        <item>Volunteers</item>
+
+    </string-array>
+    <string-array name="category">
+        <item>defiled</item>
+        <item>trauma</item>
+        <item>child labour</item>
+    </string-array>
+
+    <string-array name="type_state">
+        <item>Please Select</item>
+        <item>Committee</item>
+        <item>Adoption Society</item>
+        <item>Statutory Institution</item>
+        <item>Charitable Children Institution</item>
+        <item>Non-Government Institution</item>
+        <item>Government Institution</item>
+    </string-array>
+
+    <string-array name="committee_sub_type">
+        <item>Please Select</item>
+        <item>Local AAC</item>
+        <item>Sub County AAC</item>
+        <item>County AAC</item>
+        <item>National Adoption Committee</item>
+    </string-array>
+
+    <string-array name="statutory_sub_type">
+        <item>Please Select</item>
+        <item>Borstal</item>
+        <item>Rescue Home</item>
+        <item>Rehabilitation School</item>
+        <item>Remand Home</item>
+        <item>Assessment and Placement</item>
+    </string-array>
+
+    <string-array name="ngo_sub_type">
+        <item>Please Select</item>
+        <item>International NGO</item>
+        <item>Local NGO</item>
+        <item>Community Based Organization</item>
+        <item>Faith Based Organization</item>
+        <item>Private Organization</item>
+    </string-array>
+
+    <string-array name="gvtunit_sub_type">
+        <item>Please Select</item>
+        <item>County Children Office</item>
+        <item>Sub-County Children Office</item>
+        <item>Police Station</item>
+        <item>Health Facility</item>
+        <item>Education Facility</item>
+        <item>National Office</item>
+        <item>Children Court</item>
+    </string-array>
+
+    <string-array name="sub_county">
+        <item>Please Select</item>
+        <item>Kipkelion West</item>
+        <item>Bureti</item>
+        <item>Ainamoi</item>
+        <item>Kipkelion East</item>
+        <item>Belgut</item>
+        <item>Sigowet/Soin</item>
+    </string-array>
+
+
+    <string-array name="wards">
+        <item>Please Select</item>
+        <item>Kunyala</item>
+        <item>Chilchila</item>
+        <item>Kamasia</item>
+        <item>Kipkelion</item>
+        <item>Kisiara</item>
+        <item>Chemosot</item>
+        <item>Kapkatet</item>
+        <item>Tebesonik</item>
+        <item>Cheboin</item>
+        <item>Cheplanget</item>
+        <item>Letein</item>
+        <item>Kipchebor</item>
+        <item>Kapsaos</item>
+        <item>Kapkugerwet</item>
+        <item>Kipchimchim</item>
+        <item>Kapsoit</item>
+        <item>Londiani</item>
+        <item>Tendeno/Sorget</item>
+        <item>Kedowa/Kimugul</item>
+        <item>Chepseon</item>
+        <item>Kapsuser</item>
+        <item>Kabianga</item>
+        <item>Chaik</item>
+        <item>Cheptororiet/Seretut</item>
+        <item>Waldai</item>
+        <item>Soin</item>
+        <item>Soliat</item>
+        <item>Sigowet</item>
+        <item>Kaplelartet</item>
+    </string-array>
+
+
+    <string-array name="sex">
+        <item>Please Select</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="religion">
+        <item>Please Select</item>
+        <item>Christian</item>
+        <item>Muslim</item>
+        <item>Buddhist</item>
+        <item>Atheist</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="tribe">
+        <item>Please Select</item>
+        <item>None</item>
+        <item>American</item>
+        <item>European</item>
+        <item>Kalenjin</item>
+        <item>Kamba</item>
+        <item>Kenyan Somali</item>
+        <item>Kikuyu</item>
+        <item>Kisii</item>
+        <item>Kuria</item>
+        <item>Luhya</item>
+        <item>Luo</item>
+        <item>Maasai</item>
+        <item>Mbeere</item>
+        <item>Mijikenda</item>
+        <item>Nubi</item>
+        <item>Orma</item>
+        <item>Pokomo</item>
+        <item>Rendile</item>
+        <item>Swahili</item>
+        <item>Taita</item>
+        <item>Taveta</item>
+        <item>Teso</item>
+        <item>Tharaka</item>
+        <item>Turkana</item>
+        <item>Basuba</item>
+        <item>Other African</item>
+    </string-array>
+
+
+
+    <string-array name="relationship">
+        <item>Please Select</item>
+        <item>None</item>
+        <item>Adoptive Father</item>
+        <item>Adoptive Mother</item>
+        <item>Parent (Father)</item>
+        <item>Parent (Mother)</item>
+        <item>Foster Father</item>
+        <item>Other Relative</item>
+        <item>Sister to OVC</item>
+        <item>Brother to OVC</item>
+        <item>Uncle to OVC</item>
+        <item>Aunt to OVC</item>
+
+    </string-array>
+
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="sign_in">Sign In</string>
+    <string name="show_password">Show password</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="protecting_children_rights">Protecting Children Rights</string>
+    <string name="cpims">CPIMS</string>
+    <string name="risk_env_setting">Risk Env setting</string>
+    <string name="separated_children">Separated Children</string>
+    <string name="vane_cases">VANE Cases</string>
+    <string name="children_s_home">Children`s Home</string>
+    <string name="children_offenders">Children offenders</string>
+    <string name="handicapped">Handicapped</string>
+    <string name="child_marriage">Child Marriage</string>
+    <string name="child_labour">Child Labour</string>
+    <string name="social_assistance">Social Assistance</string>
+    <string name="school_dropouts">School dropouts</string>
+    <string name="child_disputes">Child Disputes</string>
+    <string name="trauma">Trauma</string>
+    <string name="drug_addicts">Drug Addicts</string>
+    <string name="children_s_cases">Children\'s Cases</string>
+    <string name="defilement">Defilement</string>
+    <string name="vulnarable">Vulnarable</string>
+    <string name="new_child_labour_case">New Child Labour Case</string>
+    <string name="logo">logo</string>
+
+
+</resources>

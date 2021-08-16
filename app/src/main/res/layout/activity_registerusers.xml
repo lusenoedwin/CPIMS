@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:screenOrientation="portrait"
+    android:layout_height="match_parent"
+    tools:context=".registerstates">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/logok"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/act2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User Registration"
+            android:textSize="28sp"
+            android:textColor="#0909EC"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:padding="1dp"
+            android:layout_marginBottom="28dp"
+            android:layout_marginTop="200dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/title"
+            app:layout_constraintTop_toBottomOf="@+id/title"
+            tools:ignore="UnknownIdInLayout" />
+        <LinearLayout
+            android:id="@+id/regline2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="9dp"
+            android:layout_below="@+id/act2"
+            >
+            <EditText
+                android:id="@+id/registerName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:hint="Full Name"
+                android:textColor="#01070C"
+                android:inputType="textPersonName"
+                android:background="@drawable/coolwhitegreenrounded"
+                android:padding="16dp"
+               />
+
+            <EditText
+                android:id="@+id/registerPhone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/coolwhitegreenrounded"
+                android:ems="10"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:padding="16dp"
+                android:layout_marginRight="35dp"/>
+
+            <EditText
+                android:id="@+id/registerEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/coolwhitegreenrounded"
+                android:ems="10"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress"
+                android:padding="16dp"
+                android:layout_marginRight="35dp"/>
+            <EditText
+                android:id="@+id/registerResidence"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:hint="Area of Residence"
+                android:textColor="#01070C"
+                android:inputType="textPersonName"
+                android:background="@drawable/coolwhitegreenrounded"
+                android:padding="16dp"
+                />
+
+            <EditText
+                android:id="@+id/registerPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/coolwhitegreenrounded"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+                android:padding="16dp"
+                android:hint="Password"
+                android:inputType="textPassword"/>
+
+
+            <!--        <View-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_marginLeft="40dp"-->
+            <!--            android:layout_marginRight="40dp"-->
+            <!--            android:layout_height="1dp"-->
+            <!--            android:background="#ADCCE2" />-->
+
+            <Spinner
+                android:id="@+id/typeuser"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/coolwhitegreenrounded"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:ems="10"
+
+                android:padding="16dp"/>
+
+
+
+
+        </LinearLayout>
+
+        <Button
+
+            android:id="@+id/registerBtn"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:backgroundTint="@color/button_background_color"
+            android:text="Create user Account"
+            android:layout_centerHorizontal="true"
+            android:textColor="#061AEE"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="28dp"
+            android:layout_marginTop="34dp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+</FrameLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".registerusers">-->
+
+
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"/>-->
+
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        app:cardCornerRadius="5dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+
+
+
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            >-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/logo"-->
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="150dp"-->
+<!--                android:ems="10"-->
+<!--                android:src="@drawable/logok"-->
+
+<!--                tools:ignore="MissingConstraints"-->
+<!--                tools:layout_editor_absoluteX="113dp"-->
+<!--                tools:layout_editor_absoluteY="-2dp" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/registerName"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_marginStart="16dp"-->
+<!--                android:layout_marginTop="200dp"-->
+<!--                android:layout_marginEnd="16dp"-->
+<!--                android:ems="10"-->
+<!--                android:background="@drawable/coolwhitegreenrounded"-->
+<!--                android:hint="Full Name"-->
+<!--                android:inputType="textPersonName"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/logo"-->
+<!--                />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/registerEmail"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_marginStart="16dp"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:layout_marginEnd="16dp"-->
+<!--                android:background="@drawable/coolwhitegreenrounded"-->
+<!--                android:ems="10"-->
+<!--                android:hint="Email Address"-->
+<!--                android:inputType="textEmailAddress"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/registerName" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/registerPassword"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_marginStart="16dp"-->
+<!--                android:background="@drawable/coolwhitegreenrounded"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:layout_marginEnd="16dp"-->
+<!--                android:ems="10"-->
+<!--                android:hint="Password"-->
+<!--                android:inputType="textPassword"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/registerEmail" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/registerPhone"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_marginStart="16dp"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:background="@drawable/coolwhitegreenrounded"-->
+<!--                android:layout_marginEnd="16dp"-->
+<!--                android:ems="10"-->
+<!--                android:hint="Phone Number"-->
+<!--                android:inputType="phone"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/registerPassword" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/registerBtn"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="16dp"-->
+<!--                android:layout_marginTop="32dp"-->
+<!--                android:layout_marginEnd="16dp"-->
+<!--                android:text="Create Account"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/registerPhone" />-->
+
+
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:screenOrientation="portrait"
+    android:layout_height="match_parent"
+    tools:context=".register">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/linera1"
+        >
+
+
+        <ImageView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_marginTop="14dp"
+            android:fontFamily="sans-serif-black"
+            android:src="@drawable/logok"
+            android:textColor="#000204" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lin2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/linera1"
+        >
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Childs Name"
+            android:layout_marginTop="20dp"
+            android:textSize="16dp"
+            android:textColorHint="#040907"
+            android:textColor="#0A0A0B"
+            android:layout_marginLeft="22dp"
+            android:inputType="text"
+            android:background="@drawable/coolwhitegreenrounded"
+            android:padding="16dp"
+            android:drawableRight="@drawable/user"
+            android:layout_marginRight="35dp"/>
+
+        <EditText
+            android:id="@+id/dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date of Birth"
+            android:layout_marginTop="20dp"
+            android:textSize="16dp"
+            android:textColorHint="#0A0B0A"
+            android:textColor="#050709"
+            android:layout_marginLeft="22dp"
+            android:inputType="text"
+            android:background="@drawable/coolwhitegreenrounded"
+            android:padding="16dp"
+            android:drawableRight="@drawable/user"
+            android:layout_marginRight="35dp"/>
+
+        <EditText
+            android:id="@+id/pob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Place of Birth"
+            android:layout_marginTop="20dp"
+            android:textSize="16dp"
+            android:textColorHint="#040706"
+            android:textColor="#080809"
+            android:layout_marginLeft="22dp"
+            android:inputType="text"
+            android:background="@drawable/coolwhitegreenrounded"
+            android:padding="16dp"
+            android:drawableRight="@drawable/user"
+            android:layout_marginRight="35dp"/>
+
+        <EditText
+            android:id="@+id/fname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fathers Name"
+            android:layout_marginTop="20dp"
+            android:textSize="16dp"
+            android:textColorHint="#060B09"
+            android:textColor="#040607"
+            android:layout_marginLeft="22dp"
+            android:inputType="text"
+            android:background="@drawable/coolwhitegreenrounded"
+            android:padding="16dp"
+            android:drawableRight="@drawable/user"
+            android:layout_marginRight="35dp"/>
+
+        <EditText
+            android:id="@+id/mname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mothers Name"
+            android:layout_marginTop="20dp"
+            android:textSize="16dp"
+            android:textColorHint="#080B0A"
+            android:textColor="#040505"
+            android:layout_marginLeft="22dp"
+            android:inputType="text"
+            android:background="@drawable/coolwhitegreenrounded"
+            android:padding="16dp"
+            android:drawableRight="@drawable/user"
+            android:layout_marginRight="35dp"/>
+
+        <EditText
+            android:id="@+id/residence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Place of Residence"
+            android:layout_marginTop="20dp"
+            android:textSize="16dp"
+            android:textColorHint="#020403"
+            android:textColor="#060607"
+            android:layout_marginLeft="22dp"
+            android:inputType="text"
+            android:background="@drawable/coolwhitegreenrounded"
+            android:padding="16dp"
+            android:drawableRight="@drawable/user"
+            android:layout_marginRight="35dp"/>
+
+        <EditText
+            android:id="@+id/vulne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type of Vulnerability"
+            android:layout_marginTop="20dp"
+            android:textSize="16dp"
+            android:textColorHint="#070908"
+            android:textColor="#0A0A0B"
+            android:layout_marginLeft="22dp"
+            android:inputType="text"
+            android:background="@drawable/coolwhitegreenrounded"
+            android:padding="16dp"
+            android:drawableRight="@drawable/user"
+            android:layout_marginRight="35dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/childregister"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="Register New Case"
+        android:layout_below="@+id/lin2"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="@drawable/buttonbg"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginBottom="28dp"
+        android:layout_marginTop="34dp"
+
+
+        />
+</RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.cpims">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logok"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logok"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CPIMS.NoActionBar">
+        <activity android:name=".childhome"></activity>
+        <activity android:name=".addnewdrugaddicts" />
+        <activity android:name=".addnewtrauma" />
+        <activity android:name=".addnewchilddispute" />
+        <activity android:name=".addnewschdropped" />
+        <activity android:name=".addnewsass" />
+        <activity android:name=".addnewlabour" />
+        <activity android:name=".addnewmarriage" />
+        <activity android:name=".addnewhandicaped" />
+        <activity android:name=".addnewchildoffenders" />
+        <activity android:name=".addnewchildhome" />
+        <activity android:name=".addnewvane" />
+        <activity android:name=".addnewseparated" />
+        <activity android:name=".addnewriskenv" />
+        <activity android:name=".addnewvulnerable" />
+        <activity android:name=".testingpage" />
+        <activity android:name=".captureimageupload" />
+        <activity android:name=".uploadimagetest" />
+        <activity android:name=".useractivity" />
+        <activity android:name=".logintest" />
+        <activity android:name=".registerusers" />
+        <activity android:name=".splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".addnewdefiledcase" />
+        <activity android:name=".filedcases" />
+        <activity android:name=".Manageusers" />
+        <activity android:name=".ManageInstitutions" />
+        <activity android:name=".casetypes" />
+        <activity android:name=".reports" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".policedesk" />
+        <activity android:name=".registertypes" />
+        <activity android:name=".registerstates" />
+        <activity android:name=".register" />
+        <activity android:name=".defiled" />
+        <activity android:name=".childoffenders"/>
+        <activity android:name=".separatedcases"/>
+        <activity android:name=".childlabourcases"/>
+        <activity android:name=".childdispute"/>
+        <activity android:name=".vulnerable"/>
+        <activity android:name=".handicaped"/>
+        <activity android:name=".childmarriage"/>
+        <activity android:name=".schooldropped"/>
+        <activity android:name=".trauma"/>
+        <activity android:name=".riskenv"/>
+        <activity android:name=".sass"/>
+        <activity android:name=".vane"/>
+        <activity
+            android:name=".AdminNavActivity"
+            android:label="Children Protection Information Management System" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <service
+            android:name=".MyFirebaseInstanceIDService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

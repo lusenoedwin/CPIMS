@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--When Button is not enabled -->
+    <item android:state_enabled="false" android:color="#b6b7b5">
+        <shape android:shape="rectangle"  />
+        <corners android:radius="10dip"
+            android:bottomRightRadius="50dp"
+            android:bottomLeftRadius="50dp"
+            android:topLeftRadius="50dp"
+            android:topRightRadius="50dp"
+            />
+        <stroke android:width="10dip"  />
+    </item>
+    <!--When Button is in pressed state -->
+    <item android:state_pressed="true" android:color="#06CE34">
+<!--        <shape android:shape="rectangle"  />-->
+        <corners android:radius="10dip"
+            android:bottomRightRadius="50dp"
+            android:bottomLeftRadius="50dp"
+            android:topLeftRadius="50dp"
+            android:topRightRadius="50dp"
+            />
+        <stroke android:width="10dip"  />
+
+
+
+    </item>
+    <!--When Button is in selected state -->
+    <item android:state_selected="true" android:color="#fabcff">
+
+<!--        <shape android:shape="rectangle"  />-->
+        <corners android:radius="10dip"
+            android:bottomRightRadius="50dp"
+            android:bottomLeftRadius="50dp"
+            android:topLeftRadius="50dp"
+            android:topRightRadius="50dp"
+            />
+        <stroke android:width="20dip"  />
+    </item>
+    <!--Default Background Color -->
+    <item android:color="@android:color/white" />
+
+
+</selector>

@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:screenOrientation="portrait"
+        android:layout_gravity="center"
+        tools:showIn="@layout/app_bar_admin_nav"
+        tools:context=".casetypes">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+<!--                app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+
+                <RelativeLayout
+                    android:id="@+id/topArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/bottomcurvedblue"
+
+                    >
+
+
+                    <!--            <TextView-->
+                    <!--                android:id="@+id/dashboard_adminName"-->
+                    <!--                android:layout_width="wrap_content"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:text="Tim Rotich "-->
+                    <!--                android:textSize="15sp"-->
+                    <!--                android:layout_below="@id/myDashboard"-->
+                    <!--                android:layout_alignEnd="@id/myDashboard"-->
+                    <!--                android:layout_marginTop="-20dp"-->
+                    <!--                android:textStyle="bold"-->
+                    <!--                android:textColor="@android:color/white"-->
+                    <!--                />-->
+
+
+                    <ImageView
+                        android:id="@+id/logo"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="1dp"
+                        android:src="@drawable/logok"
+                        android:textSize="90dp"
+                        android:textColor="#040909"
+                        android:fontFamily="sans-serif-black"/>
+
+                    <TextView
+                        android:id="@+id/myDashboard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CPIMS Dashboard"
+                        android:textStyle="bold"
+                        android:textSize="23sp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/logo"
+                        android:layout_margin="1dp"
+                        android:textColor="@color/white"
+                        />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/startgrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="-100dp"
+
+                    >
+
+<!--                <GridLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:columnCount="3"-->
+<!--                    android:layout_marginTop="1dp"-->
+<!--                    android:padding="3dp"-->
+<!--                    android:layout_margin="1dp"-->
+
+                    <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="3dp"
+                    android:columnCount="3"
+                    android:useDefaultMargins="true"
+                    >
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/carddefiled"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        app:cardElevation="7dp"
+                        app:cardCornerRadius="10dp"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_margin="2dp"
+                            android:padding="10dp"
+                            >
+
+                            <TextView
+                                android:id="@+id/defiled"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="30dp"
+                                android:textStyle="bold"
+                                android:textColor="#F01701"
+                                android:layout_gravity="center_horizontal"
+
+                                />
+
+                            <TextView
+                                android:id="@+id/defiledtxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="No. defiled cases"
+                                android:textSize="12sp"
+                                android:layout_gravity="center_horizontal"
+                                android:textStyle="bold"
+                                />
+                        </LinearLayout>
+
+
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardvulnerable"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        app:cardElevation="7dp"
+                        app:cardCornerRadius="10dp"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_margin="2dp"
+                            android:padding="10dp"
+                            >
+
+                            <TextView
+                                android:id="@+id/vulnerableshow"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:textSize="30sp"
+                                android:textColor="#1406D6"
+                                android:textStyle="bold"
+                                android:layout_gravity="center_horizontal|center_vertical"
+
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="From Vulnarable Families"
+                                android:textSize="12sp"
+                                android:layout_gravity="center_horizontal"
+                                android:textStyle="bold"
+                                />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardriskenv"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        app:cardElevation="7dp"
+                        app:cardCornerRadius="10dp"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_margin="2dp"
+                            android:padding="10dp"
+                            >
+
+                            <TextView
+                                android:id="@+id/riskenvshow"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:textSize="30sp"
+                                android:textStyle="bold"
+                                android:textColor="#3ADF07"
+                                android:layout_gravity="center_horizontal|center_vertical">
+
+                            </TextView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" From Risk Env"
+                                android:textSize="12sp"
+                                android:layout_gravity="center_horizontal"
+                                android:textStyle="bold"
+                                />
+
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardseparated"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        app:cardElevation="7dp"
+                        app:cardCornerRadius="10dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_margin="2dp"
+                            android:padding="10dp"
+                            >
+
+                            <TextView
+                                android:id="@+id/separatedshow"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:textSize="30sp"
+                                android:textColor="#F606FA"
+                                android:textStyle="bold"
+                                android:layout_gravity="center_horizontal|center_vertical"
+
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="No. Separated Children"
+                                android:textSize="12sp"
+                                android:layout_gravity="center_horizontal"
+                                android:textStyle="bold"
+                                />
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardvane"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        app:cardElevation="7dp"
+                        app:cardCornerRadius="10dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_margin="2dp"
+                            android:padding="10dp"
+                            >
+
+                            <TextView
+                                android:id="@+id/vaneshow"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:textSize="30sp"
+                                android:textColor="#050505"
+                                android:textStyle="bold"
+                                android:layout_gravity="center_horizontal|center_vertical"
+
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="No. VANE Cases"
+                                android:textSize="12sp"
+                                android:layout_gravity="center_horizontal"
+                                android:textStyle="bold"
+                                />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardchildhome"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        app:cardElevation="7dp"
+                        app:cardCornerRadius="10dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_margin="2dp"
+                            android:padding="10dp"
+                            >
+
+                            <TextView
+                                android:id="@+id/childhomeshow"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:textSize="30sp"
+                                android:textColor="#B15F02"
+                                android:textStyle="bold"
+                                android:layout_gravity="center_horizontal|center_vertical"
+
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="In Children`s Home"
+                                android:textSize="12sp"
+                                android:layout_gravity="center_horizontal"
+                                android:textStyle="bold"
+                                />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardchildoffenders"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        app:cardElevation="7dp"
+                        app:cardCornerRadius="10dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_margin="2dp"
+                            android:padding="10dp"
+                            >
+
+                            <TextView
+                                android:id="@+id/childoffenders"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:textSize="30sp"
+                                android:textColor="#0CE9C5"
+                                android:textStyle="bold"
+                                android:layout_gravity="center_horizontal|center_vertical"
+
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="No.Children offenders"
+                                android:textSize="12sp"
+                                android:layout_gravity="center_horizontal"
+                                android:textStyle="bold"
+                                />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardhandicapped"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        app:cardElevation="7dp"
+                        app:cardCornerRadius="10dp"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_row="0"
+                            android:layout_margin="2dp"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/handicappedshow"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:textSize="30sp"
+                                android:textColor="#F50785"
+                                android:textStyle="bold"
+                                android:layout_gravity="center_horizontal|center_vertical"
+
+
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="No.Handicapped"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardchildmarriage"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        app:cardElevation="7dp"
+                        app:cardCornerRadius="10dp"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_row="0"
+                            android:layout_margin="2dp"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/childmarriageshow"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:textSize="30sp"
+                                android:textColor="#DBF004"
+                                android:textStyle="bold"
+                                android:layout_gravity="center_horizontal|center_vertical"
+
+
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="No.Child Marriage"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardchildlabour"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        app:cardElevation="7dp"
+                        app:cardCornerRadius="10dp"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_row="0"
+                            android:layout_margin="2dp"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/childlabourshow"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:textSize="30sp"
+                                android:textColor="#03A9F4"
+                                android:textStyle="bold"
+                                android:layout_gravity="center_horizontal|center_vertical"
+
+
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="No. Child Labour"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardsocial"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        app:cardElevation="7dp"
+                        app:cardCornerRadius="10dp"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_row="0"
+                            android:layout_margin="2dp"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/childsocialshow"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:textSize="30sp"
+                                android:textColor="#DF3904"
+                                android:textStyle="bold"
+                                android:layout_gravity="center_horizontal|center_vertical"
+
+
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="Need S.Assistance"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/carddropouts"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        app:cardElevation="7dp"
+                        app:cardCornerRadius="10dp"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_row="0"
+                            android:layout_margin="2dp"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/droppedshow"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:textSize="30sp"
+                                android:textColor="#03550A"
+                                android:textStyle="bold"
+                                android:layout_gravity="center_horizontal|center_vertical"
+
+
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="No.School dropouts"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/carddisputes"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        app:cardElevation="7dp"
+                        app:cardCornerRadius="10dp"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_row="0"
+                            android:layout_margin="2dp"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/childdisputesshow"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:textSize="30sp"
+                                android:textColor="#F01701"
+                                android:textStyle="bold"
+                                android:layout_gravity="center_horizontal|center_vertical"
+
+
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="No.Child Disputes"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardtrauma"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        app:cardElevation="7dp"
+                        app:cardCornerRadius="10dp"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_row="0"
+                            android:layout_margin="2dp"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+
+                            <TextView
+                                android:id="@+id/traumashow"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:textSize="30sp"
+                                android:textColor="#0644D6"
+                                android:textStyle="bold"
+                                android:layout_gravity="center_horizontal|center_vertical"
+
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="No.Trauma"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/carddrugaddicts"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="10dp"
+                        app:cardElevation="7dp"
+                        app:cardCornerRadius="10dp"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_row="0"
+                            android:layout_margin="2dp"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/drugaddictsshow"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:textSize="30sp"
+                                android:textColor="#07E70E"
+                                android:textStyle="bold"
+                                android:layout_gravity="center_horizontal|center_vertical"
+
+
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:text="No.Drug Addicts"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </GridLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+

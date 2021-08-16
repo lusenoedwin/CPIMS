@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:screenOrientation="portrait"
+android:layout_height="match_parent"
+tools:context=".addnewchilddispute">
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logok" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reports_analytics"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/imageView"
+            android:fontFamily="@font/aladin"
+            android:textStyle="bold"
+            android:textSize="33sp"
+            android:textColor="#0334F5"
+            android:layout_marginTop="8dp"
+            />
+
+        <!-- create a Linear Layout with horizontal orientation and weightSum property -->
+
+        <LinearLayout
+            android:id="@+id/secondLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <!-- place two button's inside layout using weight property -->
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/bargraph"
+                android:layout_width="100dp"
+                android:layout_height="350dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:text="Third"
+                android:textStyle="bold" />
+
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/bargraph1"
+                android:layout_width="100dp"
+                android:layout_height="350dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="Fourth"
+                android:outlineAmbientShadowColor="#2DB902"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/secondLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/secondLayout"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <!-- place two button's inside layout using weight property -->
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/bargraph2"
+                android:layout_width="100dp"
+                android:layout_height="350dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:text="Third"
+                android:textStyle="bold" />
+
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/bargraph3"
+                android:layout_width="100dp"
+                android:layout_height="350dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="Fourth"
+                android:outlineAmbientShadowColor="#2DB902"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
+</FrameLayout>
+
+
+

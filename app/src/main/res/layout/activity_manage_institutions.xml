@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="portrait"
+    tools:context=".ManageInstitutions">
+
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/logok"
+        android:textSize="90dp"
+        android:textColor="#040909"
+        android:fontFamily="sans-serif-black"/>
+    <!--<TextView-->
+    <!--    android:id="@+id/act"-->
+    <!--    android:layout_width="wrap_content"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:text="Children Act, 2001"-->
+    <!--    android:textSize="25sp"-->
+    <!--    android:layout_below="@+id/logo"-->
+    <!--    android:textColor="#031BF4"-->
+    <!--    android:layout_centerHorizontal="true"/>-->
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="57dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/logo"
+        android:text="Registered Institutions"
+        android:fontFamily="@font/aladin"
+        android:layout_centerHorizontal="true"
+        android:textColor="#050CD6"
+        android:textSize="30sp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        android:background="#EEF2F4"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addnew_institution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@id/recycler_view"
+        android:src="@drawable/ic_add"
+        android:layout_margin="16dp"
+        android:contentDescription="TODO" />
+
+
+</RelativeLayout>

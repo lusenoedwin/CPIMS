@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="portrait"
+    android:layout_centerVertical="true"
+    android:id="@+id/relLayout"
+    tools:context=".childdispute">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="37dp"
+        android:layout_marginLeft="30dp">
+        <ImageView
+            android:id="@+id/sback"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icon_back"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/logok"
+        android:textSize="90dp"
+        android:textColor="#040909"
+        android:fontFamily="sans-serif-black"/>
+    <!--<TextView-->
+    <!--    android:id="@+id/act"-->
+    <!--    android:layout_width="wrap_content"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:text="Children Act, 2001"-->
+    <!--    android:textSize="25sp"-->
+    <!--    android:layout_below="@+id/logo"-->
+    <!--    android:textColor="#031BF4"-->
+    <!--    android:layout_centerHorizontal="true"/>-->
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="57dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/logo"
+        android:textStyle="bold"
+        android:text="Child dispute"
+        android:layout_centerHorizontal="true"
+        android:textColor="#F4031F"
+        android:textSize="24sp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addnewchilddispute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@id/recycler_view4"
+        android:src="@drawable/ic_add"
+        android:layout_margin="16dp"
+        android:contentDescription="TODO" />
+
+</RelativeLayout>
