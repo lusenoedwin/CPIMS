@@ -27,30 +27,7 @@
                     android:id="@+id/reguserslink"
                     android:icon="@drawable/users_icon"
                     android:title="Register Users" />
-                <item
-                    android:id="@+id/newchildoffenderslink"
-                    android:icon="@drawable/new_icon"
-                    android:title="New Chid Offenders"/>
-                <item
-                    android:id="@+id/newdrugaddictslink"
-                    android:icon="@drawable/users_icon"
-                    android:title="New Drug Addicts"/>
-                <item
-                    android:id="@+id/newhandicappedlink"
-                    android:icon="@drawable/handicapped_icon"
-                    android:title="New Handicapped"/>
-                <item
-                    android:id="@+id/newchilmarriagelink"
-                    android:icon="@drawable/users_icon"
-                    android:title="New Child Marriage"/>
-                <item
-                    android:id="@+id/newschooldropoutlink"
-                    android:icon="@drawable/school_icon"
-                    android:title="New School Dropout"/>
-                <item
-                    android:id="@+id/newtraumacaselink"
-                    android:icon="@drawable/users_icon"
-                    android:title="New Trauma Case"/>
+
 
 
             </menu>
